@@ -1,0 +1,30 @@
+<article id="<%= post.layout %>" class="page-article" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        <%- post.content %>
+    </div>
+    <% if(theme.reward.enable) { %>
+        <%- partial('post/reward') %>
+    <% } %>
+    <% if(post.tags) { %>
+        <%- partial('_partial/post/tags', {post: post, index: true}) %>
+    <% } %>
+    <%- partial('post/actions') %>
+    <% if(theme.comment.on) { %>
+        <div id="comment" class="vcomment v"></div>
+        <script>
+            new Valine({
+                el: '#comment' ,
+                notify: <%= theme.comment.notify %>,
+                verify: <%= theme.comment.verify %>,
+                app_id: '<%= theme.comment.appId %>',
+                app_key: '<%= theme.comment.appKey %>',
+                placeholder: '<%= theme.comment.placeholder %>',
+                pageSize: '<%= theme.comment.pageSize %>',
+                avatar: '<%= theme.comment.avatar %>',
+                avatar_cdn: '<%= theme.comment.avatar_cdn %>'
+            });
+        </script>
+    <% } %>
+    <%- js('libs/justifiedGallery/jquery.justifiedGallery.min') %>
+    <%- js('libs/fancybox/jquery.fancybox.min') %>
+</article>
