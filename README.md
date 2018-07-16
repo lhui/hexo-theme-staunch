@@ -8,7 +8,7 @@
 </p>
 
 # hexo-theme-staunch
-Staunch is a responsive theme [Hexo] (https://hexo.io/), based on Hexo 3.0 + is made, it is my first time to make Hexo theme, is also the first time I make contact, there is insufficient place, please point out, I will correct them
+Staunch is a responsive theme [Hexo](https://hexo.io/), based on Hexo 3.0 + is made, it is my first time to make Hexo theme, is also the first time I make contact, there is insufficient place, please point out, I will correct them
 
 # Contents
 - [Demo 演示](#demo)
@@ -211,7 +211,7 @@ title: excerpt
 description: 'This is the summary shown on the home page'
 ---
 ```
-- **post.excerpt: ** add:
+- **post.excerpt：** add:
 ```
 <!-- more -->
 ```
