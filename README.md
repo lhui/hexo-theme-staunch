@@ -144,9 +144,11 @@ share:
   telegram: true
 
 # Comment | 评论
+# either-or | 两者只能选择一个
+
 # Valine
 # 详情查看 https://valine.js.org/quickstart.html
-comment: 
+valine: 
     on: true # if not used, change this to 'false' | 如果不使用，将此项改为 'false'
     appId: #appID
     appKey: #appKey
@@ -156,6 +158,9 @@ comment:
     avatar: ''
     avatar_cdn: https://gravatar.loli.net/avatar/ # avatar CDN address, default gravatar.loli.net
     pageSize: 10 # comments of one page
+    
+# Disqus
+disqus: false #disqus_shortname
     
 # Copyright Information | 版权信息
 copyright: Copyright © 2018 StaunchKai. All rights reserved
@@ -236,9 +241,9 @@ share:
 ```
 
 ## Comment
-Due to Staunch the theme in the early stages, at present only use ` Valine `, if necessary can contact me, about ` Valine ` more [to see](https://valine.js.org/quickstart.html), please.
+Due to Staunch the theme in the early stages, at present only use ` Valine ` and `disqus`, if necessary can contact me, about ` Valine ` more [to see](https://valine.js.org/quickstart.html), please.
 ```
-comment: 
+valine: 
     on: true # if not used, change this to 'false' | 如果不使用，将此项改为 'false'
     appId: #appID
     appKey: #appKey
@@ -248,6 +253,8 @@ comment:
     avatar: ''
     avatar_cdn: https://gravatar.loli.net/avatar/ # avatar CDN address, default gravatar.loli.net
     pageSize: 10 # comments of one page
+    
+disqus: false #disqus_shortname
 ```
 
 ## Contents
